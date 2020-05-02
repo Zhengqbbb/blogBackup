@@ -1,0 +1,24 @@
+<header class="wrapper header-wrapper">
+    <div class="container header-nav-wrapper">
+        <div class="logo"><a href="/"><h1 class="title">Qbenben</h1></a></div>
+        <nav class="nav-wrapper">
+            <% for (var i in cates){%>
+                <a href="<%- url_for(cates[i])%>"><%=i%></a>
+            <%}%>
+        </nav>
+        <span class="btn-menu" id="J_header_menu">
+            <div class="inner">
+                <span class="line line-01"></span>
+                <span class="line line-02"></span>
+                <span class="line line-03"></span>
+            </div>
+        </span>
+        <div class="wrapper mb-nav-wrapper" id="J_header_menu_list">
+            <nav class="wrapper mb-nav-container">
+                <% for (var i in cates){%>
+                    <a href="<%- url_for(cates[i])%>"><%=i%></a>
+                <%}%>
+            </nav>
+        </div>
+    </div>
+</header>

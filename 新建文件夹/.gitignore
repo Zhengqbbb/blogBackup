@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+.deploy*/
+.vscode
+.history
+public/
+package-lock.json
+source/images/.DS_Store
